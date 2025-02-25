@@ -28,7 +28,7 @@ In the world of data science, SQL is an indispensable tool for several key reaso
 
 * **Foundation for Other Tools:** While other tools like Pandas in Python or data.table in R are popular for data manipulation, they often work best when the initial data extraction and preparation have been done efficiently using SQL.  SQL can be used to narrow down the data to the most relevant subset before it's brought into these other environments.
 
-## What Should You Learn for Data Analysis and Data Science?
+## What Should Learn for Data Analysis and Data Science?
 
 Here's a breakdown of essential SQL concepts for data science:
 
