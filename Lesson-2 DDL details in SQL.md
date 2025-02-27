@@ -44,11 +44,13 @@ ALTER TABLE employees RENAME TO staff;
 ### RENAME: Used to rename existing database objects like tables, columns, indexes, etc.
 
 sql
+
 ALTER TABLE employees RENAME TO staff;
 
 ### COMMENT: Used to add comments to database objects for better documentation.
 
 sql
+
 COMMENT ON TABLE employees IS 'Table storing employee data';
 
 ### Autocommit: DDL commands are autocommitted, meaning they take effect immediately and cannot be rolled back.

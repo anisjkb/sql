@@ -3,20 +3,22 @@
 ## User Management
 
 ### Create User
+
 ```sql
+
 CREATE USER anis WITH PASSWORD 'abCd' 
-VALID UNTIL '2024-09-30';
+VALID UNTIL '2024-09-30';```
 
-###Grant and Revoke Permissions
+### Grant and Revoke Permissions
 
-sql
+```sql
 
 GRANT USAGE ON SCHEMA sales TO anis;
 GRANT SELECT ON TABLE sales.students TO anis;
 GRANT SELECT ON TABLE sales.orders TO anis;
-REVOKE SELECT ON TABLE sales.orders FROM anis;
+REVOKE SELECT ON TABLE sales.orders FROM anis;```
 
-###Alter User Validity
+### Alter User Validity
 
 sql
 
@@ -26,29 +28,29 @@ VALID UNTIL '2024-10-01';
 ALTER USER anis 
 VALID UNTIL 'infinity';
 
-##Table Management
+## Table Management
 
-###Alter Table Owner
+### Alter Table Owner
 
 sql
 
 ALTER TABLE sales.students
 OWNER TO anis;
 
-###Create and Drop Table
+### Create and Drop Table
 
 sql
 
 CREATE TABLE sales.new_tbl (id int, name text);
 DROP TABLE sales.new_tbl;
 
-###Create Temporary Table
+### Create Temporary Table
 
 sql
 
 CREATE TEMPORARY TABLE new_tbl (id int, name text);
 
-###Insert Data into Temporary Table
+### Insert Data into Temporary Table
 
 sql
 
@@ -85,24 +87,24 @@ sql
 
 SELECT * FROM information_schema.tables;
 
-##Index Management
+## Index Management
 
-###Create and Drop Index
+### Create and Drop Index
 
 sql
 
 CREATE INDEX order_id_idx ON sales.orders (order_id);
 DROP INDEX order_id_idx;
 
-##Creating Tables with Constraints
+## Creating Tables with Constraints
 
-###Create Table with Primary Key
+### Create Table with Primary Key
 
 sql
 
 CREATE TABLE sales.new_tbl (id int PRIMARY KEY, name text);
 
-###Create Employees and Departments Tables
+### Create Employees and Departments Tables
 
 sql
 
@@ -119,7 +121,7 @@ CREATE TABLE sales.departments (
     created_at date
 );
 
-###Add Foreign Key Constraint
+### Add Foreign Key Constraint
 
 sql
 
@@ -128,7 +130,7 @@ ADD CONSTRAINT fk_dept_emp
 FOREIGN KEY (emp_id)
 REFERENCES sales.departments(id);
 
-###Insert Data into Employees Table
+### Insert Data into Employees Table
 
 sql
 
@@ -138,7 +140,7 @@ VALUES
 
 SELECT * FROM sales.employees;
 
-###Create Table from Select
+### Create Table from Select
 
 sql
 
