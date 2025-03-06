@@ -17,7 +17,7 @@ In today's discussion, we explored powerful SQL techniques—commonly known as w
 
 ## Table of Contents
 
-1. [Introduction()](#introduction)
+1. [LAG() Example](#lag-example)
 2. [Window Functions Overview](#window-functions-overview)
 3. [Basic Window Function Examples](#basic-window-function-examples)
    - [ROW_NUMBER() Example](#rownumber-example)
@@ -36,7 +36,7 @@ In today's discussion, we explored powerful SQL techniques—commonly known as w
 
 ---
 
-## 1. Introduction [Introduction](#introduction)
+## 1. [LAG() Example](#lag-example)
 
 SQL advanced (window) functions allow you to analyze data deeply—calculating rankings, running totals, and moving averages—without losing row-level details. Unlike traditional aggregate functions that collapse data into summary rows, these functions let you “look around” at neighboring rows and perform calculations on the fly.
 
