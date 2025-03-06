@@ -69,7 +69,7 @@ Consider the following `Employees` table:
 
 ---
 
-### ROW_NUMBER() Example
+### ROW_NUMBER() Example {#rownumber-example}
 
 Assign a sequential number to each employee **within their department ordered by salary (highest first)**:
 
