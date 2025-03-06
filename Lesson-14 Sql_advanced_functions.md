@@ -17,7 +17,7 @@ In today's discussion, we explored powerful SQL techniques—commonly known as w
 
 ## Table of Contents
 
-1. [Introduction](#introduction)
+1. [Introduction()](#introduction)
 2. [Window Functions Overview](#window-functions-overview)
 3. [Basic Window Function Examples](#basic-window-function-examples)
    - [ROW_NUMBER() Example](#rownumber-example)
